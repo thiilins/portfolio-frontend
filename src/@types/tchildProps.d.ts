@@ -1,0 +1,3 @@
+interface TChildProps {
+  children: TChildren
+}
