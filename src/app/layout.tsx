@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Boilerplate Next + Typescript',
   description: 'TypeScript, ReactJS, NextJS e Styled Components',
   icons: {
-    icon: '/assets/icons/192x192.png'
+    icon: '/assets/img/favicon.svg'
   },
   viewport: {
     width: 'device-width',
