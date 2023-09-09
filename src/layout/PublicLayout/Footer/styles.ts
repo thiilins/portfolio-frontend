@@ -1,9 +1,9 @@
+'use client'
 import styled, { css } from 'styled-components'
 
 export const FooterWrapper = styled.footer`
   ${({ theme }) => css`
     width: 100%;
-    height: auto;
     background-color: ${theme.colors.secondary};
     background: linear-gradient(
       180deg,

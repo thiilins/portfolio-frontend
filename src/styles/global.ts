@@ -22,6 +22,23 @@ ${({ theme }) => css`
   strong {
     font-weight: ${theme.fonts.weight.bold};
   }
+  /*  CUSTOM SCROLLBAR */
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: ${theme.colors.white};
+  }
+
+  body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f5f5f5;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: ${theme.colors.primary};
+  }
+  /*  CUSTOM SCROLLBAR FINISH */
   a {
     color: ${theme.colors.primary};
     text-decoration: none;

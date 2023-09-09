@@ -3,8 +3,6 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
   ${({ theme }) => css`
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.primaryText};
     min-width: 100%;
     min-height: 100%;
     padding: 3rem;
