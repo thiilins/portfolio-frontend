@@ -1,5 +1,5 @@
 {
-  "name": "portfolio_new",
+  "name": "portfolio",
   "version": "0.0.1",
   "private": false,
   "scripts": {
@@ -30,10 +30,13 @@
     "cookie": "^0.5.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "moment": "^2.29.4",
     "negotiator": "^0.6.3",
     "next": "13.4.19",
+    "polished": "^4.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
     "styled-components": "^6.0.7",
     "typescript": "5.2.2",
     "usehooks-ts": "^2.9.1"
