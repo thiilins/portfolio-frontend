@@ -6,6 +6,11 @@ const nextConfig = {
   i18n: {
     locales: ['en-US', 'pt-BR'],
     defaultLocale: 'pt-BR'
+  },
+  images: {
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
 }
 

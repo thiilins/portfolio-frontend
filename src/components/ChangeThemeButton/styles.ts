@@ -1,8 +1,8 @@
 'use client'
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.div`
-  ${({ theme }) => css`
+export const Wrapper = styled.div<{ $loaded?: boolean }>`
+  ${({ theme, $loaded = false }) => css`
     /* The switch - the box around the slider */
     .switch {
       display: block;
@@ -15,6 +15,9 @@ export const Wrapper = styled.div`
       position: relative;
       width: var(--width-of-switch);
       height: var(--height-of-switch);
+      max-width: var(--width-of-switch);
+      max-height: var(--height-of-switch);
+      overflow: hidden;
     }
 
     /* Hide default HTML checkbox */
@@ -64,5 +67,34 @@ export const Wrapper = styled.div`
         inset -3px -2px 5px -2px #8983f7,
         inset -10px -4px 0 0 #a3dafb;
     }
+
+    ${!$loaded &&
+    css`
+      .switch {
+        transform: translateX(-100%);
+        background-color: ${theme.colors.white};
+        background: linear-gradient(
+          110deg,
+          rgba(227, 227, 227, 0) 0%,
+          rgba(227, 227, 227, 0) 40%,
+          rgba(227, 227, 227, 0.5) 50%,
+          rgba(227, 227, 227, 0) 60%,
+          rgba(227, 227, 227, 0) 100%
+        );
+        animation: gradient-animation_2 1.2s linear infinite;
+        & * {
+          display: none;
+        }
+      }
+      @keyframes gradient-animation_2 {
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    `}/*  */
   `}
 `

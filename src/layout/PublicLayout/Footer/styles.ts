@@ -19,7 +19,16 @@ export const FooterWrapper = styled.footer`
     gap: 1rem;
     align-items: center;
     justify-content: center;
-
+    .row,
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    ul {
+      list-style: none;
+      gap: 1.5rem;
+    }
     .row {
       width: 100%;
       padding: 0.6rem 0;
@@ -35,6 +44,11 @@ export const FooterWrapper = styled.footer`
       &.copyright {
         font-size: 1.2rem;
       }
+    }
+    svg.footer_logo {
+      color: ${theme.colors.primaryText};
+      width: 320px;
+      height: auto;
     }
     @media (max-width: 720px) {
       height: auto;

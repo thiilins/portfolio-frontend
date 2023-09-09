@@ -21,7 +21,7 @@ export const HeaderMainWrapper = styled.header`
     display: grid;
     grid-template-columns: 1fr 5fr 0.5fr;
 
-    & > * {
+    & > div {
       height: 100%;
       display: flex;
       align-items: center;
@@ -29,12 +29,19 @@ export const HeaderMainWrapper = styled.header`
     }
   `}
 `
-export const LogoWrapper = styled.main`
+export const LogoWrapper = styled.div`
+  ${({ theme }) => css`
+    .header_logo {
+      width: auto;
+      height: 72px;
+      padding: 0;
+      color: ${theme.colors.white};
+    }
+  `}
+`
+export const MenuWrapper = styled.div`
   ${({ theme }) => css``}
 `
-export const MenuWrapper = styled.main`
-  ${({ theme }) => css``}
-`
-export const FeaturedWrapper = styled.main`
+export const FeaturedWrapper = styled.div`
   ${({ theme }) => css``}
 `

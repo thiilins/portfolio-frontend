@@ -9,13 +9,16 @@ import {
 } from './styles'
 import ChangeThemeButton from '@components/ChangeThemeButton'
 import { TopBar } from '../TopBar'
+import Logo from '@shared/svg/Logo'
 
 export const Header: React.FC = () => {
   return (
     <HeaderWrapper>
       <TopBar />
       <HeaderMainWrapper>
-        <LogoWrapper></LogoWrapper>
+        <LogoWrapper>
+          <Logo className="header_logo" />
+        </LogoWrapper>
         <MenuWrapper></MenuWrapper>
         <FeaturedWrapper>
           <ChangeThemeButton />

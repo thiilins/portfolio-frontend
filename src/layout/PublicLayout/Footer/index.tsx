@@ -3,21 +3,22 @@ import { FooterWrapper } from './styles'
 import Link from 'next/link'
 import SocialIcons from '@components/SocialIcons'
 import moment from 'moment'
-interface IProps {
-  links?: {
-    name: string
-    url: string
-  }[]
-  socialLinks?: TSocialLinks
-}
-export const Footer: React.FC<IProps> = ({ links, socialLinks }) => {
+
+import socials from '@constants/socialLinks'
+import links from '@constants/footerLinks'
+import Image from 'next/image'
+import Logo from '@shared/svg/Logo'
+export const Footer: React.FC = () => {
   const year = moment().year()
   const siteName = process.env.NEXT_PUBLIC_SITE_NAME
   const siteUrl = process.env.NEXT_PUBLIC_URL
   return (
     <FooterWrapper>
       <div className="row">
-        <SocialIcons {...socialLinks} />
+        <Logo className="footer_logo" />
+      </div>
+      <div className="row">
+        <SocialIcons {...socials} />
       </div>
       <div className="row">
         <ul>
@@ -31,11 +32,17 @@ export const Footer: React.FC<IProps> = ({ links, socialLinks }) => {
       </div>
 
       <div className="row copyright">
-        Copyright © {year} <Link href={siteUrl ?? '#'}> {siteName} </Link> -
-        All rights reserved | Designed with
+        Copyright © {year}{' '}
+        <Link href={siteUrl ?? '#'}>
+          {' '}
+          {'  '}
+          {siteName}{' '}
+        </Link>{' '}
+        - All rights reserved | Designed with
         {'  '}
-        <i style={{ color: 'red', fontSize: '1.5rem' }}>♥</i> by{' '}
-        <Link href="https://thiagolins.dev.br">Thiago Lins</Link>
+        <i style={{ color: 'red', fontSize: '1.5rem' }}>♥</i>
+        {'  '}
+        by <Link href="https://thiagolins.dev.br">Thiago Lins</Link>
       </div>
     </FooterWrapper>
   )

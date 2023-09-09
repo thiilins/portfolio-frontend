@@ -1,13 +1,12 @@
 import React from 'react'
 import { TopBarWrapper } from './styles'
 
-import { DefaultImage } from '@components/DefaultImage'
 import SocialIcons from '@components/SocialIcons'
-
+import socials from '@constants/socialLinks'
 export const TopBar: React.FC = () => {
   return (
     <TopBarWrapper>
-      <SocialIcons />
+      <SocialIcons {...socials} />
     </TopBarWrapper>
   )
 }

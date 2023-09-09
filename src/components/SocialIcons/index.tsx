@@ -15,7 +15,7 @@ const SocialIcons: React.FC<TSocialLinks> = ({
 }) => (
   <SocialLinksWrapper>
     {instagram && (
-      <a href={`https://t`} target="_blank">
+      <a href={`https://instagram.com/${instagram}`} target="_blank">
         <GrInstagram />
       </a>
     )}
