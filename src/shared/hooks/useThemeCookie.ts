@@ -1,6 +1,6 @@
 'use client'
 // For more details check the JS-Cookie Docs in https://github.com/js-cookie/js-cookie#readme
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import Cookies from 'js-cookie'
 
 export default function useThemeCookie(
@@ -12,8 +12,9 @@ export default function useThemeCookie(
 
   useEffect(() => {
     Cookies.set('theme', theme, {
-      expires: Number(process.env.NEXT_PUBLIC_COOKIES_EXPIRES) ?? 365,
-      domain: process.env.NEXT_PUBLIC_COOKIE_DOMAIN
+      expires: !isNaN(Number(process.env.NEXT_PUBLIC_COOKIES_EXPIRES))
+        ? Number(process.env.NEXT_PUBLIC_COOKIES_EXPIRES)
+        : 365
     })
   }, [theme])
 
