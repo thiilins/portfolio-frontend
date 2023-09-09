@@ -6,10 +6,11 @@ export const dark: DefaultTheme = {
   title: 'dark',
   colors: {
     ...defaultTheme.colors,
-    accent: '#9857D3',
-    primary: '#11071F',
-    secondary: '#2B215A',
-    primaryText: '#FFFFFF',
-    secondaryText: '#CCD6F6'
+    accent: '#ff5959',
+    secondaryAccent: '#4158d0',
+    primary: '#1c0826',
+    secondary: '#38126D',
+    primaryText: '#F0F2F5',
+    secondaryText: '#FF8A56'
   }
 }

@@ -6,10 +6,11 @@ export const light: DefaultTheme = {
   title: 'light',
   colors: {
     ...defaultTheme.colors,
-    accent: '#2B215A',
-    primary: '#FFFFFF',
-    secondary: '#CCD6F6',
-    primaryText: '#11071F',
-    secondaryText: '#2B215A'
+    accent: '#ff5959',
+    secondaryAccent: '#4158d0',
+    primary: '#FF8A56',
+    secondary: '#F0F2F5',
+    primaryText: '#1c0826',
+    secondaryText: '#38126D'
   }
 }
