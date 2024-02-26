@@ -90,5 +90,13 @@ export const defaultTheme = {
       xLarge: '2.4rem',
       xxLarge: '4.8rem'
     }
+  },
+  zIndex: {
+    background: 5,
+    base: 10,
+    overlay: 20,
+    dropdown: 30,
+    sticky: 40,
+    fixed: 50
   }
 }

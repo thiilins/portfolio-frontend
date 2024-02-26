@@ -8,19 +8,19 @@ import {
   MenuWrapper
 } from './styles'
 import ChangeThemeButton from '@components/ChangeThemeButton'
-import { TopBar } from '../TopBar'
 import Logo from '@shared/svg/Logo'
-
+import SocialIcons from '@components/SocialIcons'
+import socials from '@constants/socialLinks'
 export const Header: React.FC = () => {
   return (
     <HeaderWrapper>
-      <TopBar />
       <HeaderMainWrapper>
         <LogoWrapper>
           <Logo className="header_logo" />
         </LogoWrapper>
         <MenuWrapper></MenuWrapper>
         <FeaturedWrapper>
+          <SocialIcons {...socials} />
           <ChangeThemeButton />
         </FeaturedWrapper>
       </HeaderMainWrapper>

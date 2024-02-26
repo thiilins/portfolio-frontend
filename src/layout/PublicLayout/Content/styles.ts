@@ -13,5 +13,8 @@ export const Wrapper = styled.main`
     color: ${theme.colors.primaryText};
     min-width: 100%;
     min-height: 100%;
+    .content {
+      z-index: ${theme.zIndex.base};
+    }
   `}
 `

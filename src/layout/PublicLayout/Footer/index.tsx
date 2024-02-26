@@ -5,7 +5,7 @@ import SocialIcons from '@components/SocialIcons'
 import moment from 'moment'
 
 import socials from '@constants/socialLinks'
-import links from '@constants/footerLinks'
+import { footerMenu as links } from '@constants/menus'
 import Image from 'next/image'
 import Logo from '@shared/svg/Logo'
 export const Footer: React.FC = () => {

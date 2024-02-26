@@ -2,22 +2,26 @@
 import styled, { css } from 'styled-components'
 export const HeaderWrapper = styled.header`
   ${({ theme }) => css`
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.primaryText};
+    z-index: ${theme.zIndex.sticky};
     min-width: 100%;
     display: grid;
-    position: sticky;
+    position: fixed;
     top: 0px;
+    padding: 3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 32px 72px;
   `}
 `
 export const HeaderMainWrapper = styled.header`
   ${({ theme }) => css`
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.primaryText};
+    background-color: ${theme.colors.white};
+    * {
+      color: ${theme.colors.primary};
+    }
     min-width: 100%;
     height: 100%;
+    padding: 3rem;
+
+    border-radius: 1rem;
     display: grid;
     grid-template-columns: 1fr 5fr 0.5fr;
 
@@ -25,12 +29,13 @@ export const HeaderMainWrapper = styled.header`
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
     }
   `}
 `
 export const LogoWrapper = styled.div`
   ${({ theme }) => css`
+    align-items: flex-start;
+    justify-content: flex-start;
     .header_logo {
       width: auto;
       height: 72px;
