@@ -11,7 +11,9 @@ export const FooterWrapper = styled.footer`
       ${theme.colors.primary} 50%
     );
     padding: 30px 0px;
-    color: ${theme.colors.primaryText};
+    * {
+      color: white !important;
+    }
     text-align: center;
     font-size: 1.9rem;
     display: flex;

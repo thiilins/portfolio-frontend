@@ -15,6 +15,7 @@ export const SocialLinksWrapper = styled.div`
       color: ${theme.colors.primaryText};
       &:hover {
         color: ${theme.colors.secondaryText};
+        scale: 1.2;
       }
     }
   `}
