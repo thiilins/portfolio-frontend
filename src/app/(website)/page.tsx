@@ -1,4 +1,4 @@
-import Main from '@/components/Main'
+import Main from '@views/Home/Main'
 interface IProps {
   title?: string
 }

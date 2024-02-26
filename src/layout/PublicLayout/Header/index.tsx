@@ -10,7 +10,7 @@ import {
 import ChangeThemeButton from '@components/ChangeThemeButton'
 import Logo from '@shared/svg/Logo'
 import SocialIcons from '@components/SocialIcons'
-import socials from '@constants/socialLinks'
+import { socialMedias } from '@constants/menus'
 export const Header: React.FC = () => {
   return (
     <HeaderWrapper>
@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
         </LogoWrapper>
         <MenuWrapper></MenuWrapper>
         <FeaturedWrapper>
-          <SocialIcons {...socials} />
+          <SocialIcons {...socialMedias} />
           <ChangeThemeButton />
         </FeaturedWrapper>
       </HeaderMainWrapper>

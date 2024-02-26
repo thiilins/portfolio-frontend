@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import * as S from './styles'
-import ChangeThemeButton from '../ChangeThemeButton'
+import ChangeThemeButton from '../../../components/ChangeThemeButton'
 const Main = ({
   title = 'Boilerplate Next + Typescript',
   description = 'TypeScript, ReactJS, NextJS e Styled Components'

@@ -1,4 +1,4 @@
-import Main from '@/components/Main'
+import Main from '@views/Home/Main'
 import Error from 'next/error'
 import { notFound } from 'next/navigation'
 interface IProps {

@@ -11,8 +11,8 @@ export const Wrapper = styled.main`
       ${theme.colors.secondary} 80%
     );
     color: ${theme.colors.primaryText};
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     .content {
       z-index: ${theme.zIndex.base};
     }

@@ -13,13 +13,16 @@ export const HeaderWrapper = styled.header`
 `
 export const HeaderMainWrapper = styled.header`
   ${({ theme }) => css`
-    background-color: ${theme.colors.white};
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+
     * {
-      color: ${theme.colors.primary};
+      color: ${theme.colors.white};
     }
     min-width: 100%;
     height: 100%;
-    padding: 3rem;
+    padding: 1rem 3rem;
 
     border-radius: 1rem;
     display: grid;

@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import StyledComponentsRegistry from '@/lib/registry'
-import GlobalThemeWrapper from '@/lib/GlobalThemeWrapper'
 import { cookies } from 'next/headers'
-import DefaultLayout from '@layout/DefaultLayout'
+import BioLinkThemeWrapper from '@layout/BioLinkLayout'
 export const metadata: Metadata = {
   title: 'Boilerplate Next + Typescript',
   description: 'TypeScript, ReactJS, NextJS e Styled Components',
@@ -14,16 +13,16 @@ export const metadata: Metadata = {
     initialScale: 1
   }
 }
-export default function RootLayout({ children }: TChildProps) {
+export default function BiolinkLayout({ children }: TChildProps) {
   const theme = cookies().get('theme')
   return (
     <html lang="pt-BR">
       <body>
         <StyledComponentsRegistry>
           <>
-            <DefaultLayout ssrCookieTheme={theme?.value ?? 'dark'}>
+            <BioLinkThemeWrapper ssrCookieTheme={theme?.value ?? 'dark'}>
               {children}
-            </DefaultLayout>
+            </BioLinkThemeWrapper>
           </>
         </StyledComponentsRegistry>
       </body>

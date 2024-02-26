@@ -4,7 +4,7 @@ import Link from 'next/link'
 import SocialIcons from '@components/SocialIcons'
 import moment from 'moment'
 
-import socials from '@constants/socialLinks'
+import { socialMedias } from '@constants/menus'
 import { footerMenu as links } from '@constants/menus'
 import Image from 'next/image'
 import Logo from '@shared/svg/Logo'
@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
         <Logo className="footer_logo" />
       </div>
       <div className="row">
-        <SocialIcons {...socials} />
+        <SocialIcons {...socialMedias} />
       </div>
       <div className="row">
         <ul>
