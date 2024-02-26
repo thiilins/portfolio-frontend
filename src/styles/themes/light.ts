@@ -4,6 +4,10 @@ import { DefaultTheme } from 'styled-components'
 export const light: DefaultTheme = {
   ...defaultTheme,
   title: 'light',
+  display: {
+    dark: 'none',
+    light: 'block'
+  },
   colors: {
     ...defaultTheme.colors,
     accent: '#ff5959',

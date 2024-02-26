@@ -26,6 +26,7 @@
     "@formatjs/intl-localematcher": "^0.5.4",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
+    "@types/js-cookie": "^3.0.6",
     "@types/node": "20.11.17",
     "@types/react": "18.2.56",
     "@types/react-dom": "18.2.18",
