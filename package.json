@@ -77,7 +77,7 @@
     "lint-staged": "^15.2.2",
     "plop": "^4.0.1",
     "prettier": "^3.0.3",
-    "storybook": "^7.4.0",
+    "storybook": "^8.0.0",
     "typescript-styled-plugin": "^0.18.3"
   },
   "resolutions": {
