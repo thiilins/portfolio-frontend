@@ -5,10 +5,11 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended",
     "next/core-web-vitals"
   ],
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
     "react-hooks/rules-of-hooks": "error",

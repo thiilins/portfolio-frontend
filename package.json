@@ -8,9 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint  --no-cache --max-warnings=0 --fix",
-    "storybook": "storybook dev -p 6006",
     "postinstall": "husky install",
-    "build-storybook": "storybook build",
     "generate": "yarn plop --plopfile generators/plopfile.cjs",
     "push:patch": "npm version patch && git push",
     "push:minor": "npm version minor && git push",
@@ -30,7 +28,6 @@
     "@types/node": "20.12.2",
     "@types/react": "18.2.73",
     "@types/react-dom": "18.2.21",
-
     "cookie": "^0.6.0",
     "eslint": "8.57.0",
     "eslint-config-next": "14.1.4",
@@ -47,18 +44,8 @@
     "swiper": "^11.0.6",
     "typescript": "5.4.2",
     "usehooks-ts": "^3.0.1"
-
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.0.0",
-    "@storybook/addon-interactions": "^8.0.5",
-    "@storybook/addon-links": "^8.0.5",
-
-    "@storybook/addon-onboarding": "^8.0.0",
-    "@storybook/blocks": "^8.0.4",
-    "@storybook/nextjs": "^8.0.4",
-    "@storybook/react": "^8.0.4",
-    "@storybook/testing-library": "^0.2.0",
     "@swc/plugin-styled-components": "^1.5.74",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
@@ -71,14 +58,12 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^9.0.11",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
     "lint-staged": "^15.2.2",
     "plop": "^4.0.1",
     "prettier": "^3.0.3",
-    "storybook": "^8.0.0",
     "typescript-styled-plugin": "^0.18.3"
   },
   "resolutions": {
