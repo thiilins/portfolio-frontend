@@ -26,7 +26,7 @@
     "@tsparticles/react": "^3.0.0",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "20.12.7",
-    "@types/react": "18.2.75",
+    "@types/react": "18.2.78",
     "@types/react-dom": "18.2.24",
     "cookie": "^0.6.0",
     "eslint": "9.0.0",
